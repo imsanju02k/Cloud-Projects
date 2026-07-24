@@ -67,7 +67,7 @@ Using Terraform or the AWS Console:
    - Automatically abort incomplete multipart uploads after 7 days.
 
 ### Step 2: Deploy the Python Compliance Auditor (AWS Lambda)
-1. Deploy the `backup_automation.py` script provided in [`code/backup_automation.py`](./code/backup_automation.py).
+1. Deploy the `backup_automation.py` script provided in [`code/backup_automation.py`](https://github.com/imsanju02k/Cloud-Projects/blob/main/Day-1/S3-Auto-BackUp-Lifecycle/Code/backup_automation.py).
 2. Attach an IAM Role with `s3:GetLifecycleConfiguration`, `s3:GetBucketVersioning`, and `sns:Publish` permissions.
 
 ### Step 3: Configure EventBridge & SNS Notifications
