@@ -68,7 +68,7 @@ The application downtime caused transaction processing failures across 12 bankin
 ## 🚀 Step-by-Step Implementation Guide
 
 ### Step 1: Provision Multi-Region Infrastructure with Terraform
-1. Deploy the Terraform IaC code in [`code/terraform/main.tf`](./code/terraform/main.tf).
+1. Deploy the Terraform IaC code in [`code/terraform/main.tf`](https://github.com/imsanju02k/Cloud-Projects/blob/main/Day-2/S3%20Cross-Region%20Replication%20%26%20KMS%20Failover/code/terraform/main.tf).
 2. Terraform provisions:
    - KMS Key in `us-east-1` & KMS Key in `us-west-2`.
    - Primary S3 Bucket (`us-east-1`) & Replica S3 Bucket (`us-west-2`) with S3 Versioning enabled.
@@ -83,7 +83,7 @@ The application downtime caused transaction processing failures across 12 bankin
    export PRIMARY_BUCKET_NAME="compliance-primary-data-production-east1"
    export REPLICA_BUCKET_NAME="compliance-replica-dr-production-west2"
    ```
-2. Run the Boto3 auditor script provided in [`code/replication_failover_monitor.py`](./code/replication_failover_monitor.py).
+2. Run the Boto3 auditor script provided in [`code/replication_failover_monitor.py`](https://github.com/imsanju02k/Cloud-Projects/blob/main/Day-2/S3%20Cross-Region%20Replication%20%26%20KMS%20Failover/code/replication_failover_monitor.py).
 
 ### Step 3: Test Cross-Region Disaster Recovery Failover
 1. Upload a KMS-encrypted sample file to the primary bucket:
@@ -103,8 +103,8 @@ The application downtime caused transaction processing failures across 12 bankin
 
 ## 💻 Code & Infrastructure Artifacts
 
-- **Terraform Multi-Region IaC Blueprint**: [`code/terraform/main.tf`](./code/terraform/main.tf)
-- **Python Boto3 Replication Monitor**: [`code/replication_failover_monitor.py`](./code/replication_failover_monitor.py)
+- **Terraform Multi-Region IaC Blueprint**: [`code/terraform/main.tf`](https://github.com/imsanju02k/Cloud-Projects/blob/main/Day-2/S3%20Cross-Region%20Replication%20%26%20KMS%20Failover/code/terraform/main.tf)
+- **Python Boto3 Replication Monitor**: [`code/replication_failover_monitor.py`](https://github.com/imsanju02k/Cloud-Projects/blob/main/Day-2/S3%20Cross-Region%20Replication%20%26%20KMS%20Failover/code/replication_failover_monitor.py)
 
 ---
 
